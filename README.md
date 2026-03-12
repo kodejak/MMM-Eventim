@@ -20,11 +20,11 @@ MagicMirror² module that displays the events and concerts of the next 30 days f
         showPrice: true,
         showVenue: true,
         venues: ["Molotow", "Knust", "Uebel & Gefährlich"],
-    }
+  }
 }
 ```
 
-The Eventim API doc is described here: [https://gist.github.com/DeveloperMarius/7e8aff4c69ccbf59238d76163c86d9c9](Eventim API doc).
+The Eventim API doc is described here: https://gist.github.com/DeveloperMarius/7e8aff4c69ccbf59238d76163c86d9c9
 
 ## Installation
 Navigate into your MagicMirror's `modules` folder:
