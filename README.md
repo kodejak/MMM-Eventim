@@ -9,18 +9,18 @@ MagicMirror² module that displays the events and concerts of the next 30 days f
     module: "MMM-Eventim",
     position: "top_right",
     config: {
-        updateInterval: 60 * 1000,
-        animationSpeed: 1000,
-        maxItems: 10,
-        language: "de",
-        cities: ["Berlin"],
-        categories: ["Konzerte"],
-        searchTerm: "Indie",
-        inStock: true,
-        showPrice: true,
-        showVenue: true,
-        venues: ["Molotow", "Knust", "Uebel & Gefährlich"],
-  }
+      updateInterval: 60 * 1000,
+      animationSpeed: 1000,
+      maxItems: 10,
+      language: "de",
+      cities: ["Berlin"],
+      categories: ["Konzerte"],
+      searchTerm: "Indie",
+      inStock: true,
+      showPrice: true,
+      showVenue: true,
+      venues: ["Molotow", "Knust", "Uebel & Gefährlich"],
+    }
 }
 ```
 
