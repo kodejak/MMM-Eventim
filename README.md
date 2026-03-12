@@ -2,7 +2,24 @@
 
 MagicMirror² module that displays the events and concerts of the next 30 days from Eventim.
 
+The Eventim API doc is described here: https://gist.github.com/DeveloperMarius/7e8aff4c69ccbf59238d76163c86d9c9
+
+## Installation
+Navigate into your MagicMirror's `modules` folder:
+```
+cd ~/MagicMirror/modules
+```
+
+Clone this repository:
+```
+git clone https://github.com/kodejak/MMM-Eventim 
+```
+
+Configure the module in your `config.js` file.
+
 ## Configuration
+
+To use this module, add it to the modules array in the `config/config.js` file:
 
 ```javascript
 {
@@ -24,45 +41,7 @@ MagicMirror² module that displays the events and concerts of the next 30 days f
 }
 ```
 
-The Eventim API doc is described here: https://gist.github.com/DeveloperMarius/7e8aff4c69ccbf59238d76163c86d9c9
-
-## Installation
-Navigate into your MagicMirror's `modules` folder:
-```
-cd ~/MagicMirror/modules
-```
-
-Clone this repository:
-```
-git clone https://github.com/kodejak/MMM-Eventim 
-```
-
-Configure the module in your `config.js` file.
-
-## Using the module
-
-To use this module, add it to the modules array in the `config/config.js` file:
-```javascript
-modules: [
-  {
-      module: "MMM-Eventim",
-    	position: "bottom_center",
-    	config: {
-        updateInterval: 60 * 1000,
-        animationSpeed: 1000,
-        maxItems: 10,
-        cities: ["Hamburg", "Berlin"],
-        category: "Konzerte",
-        searchTerm: "Indie",
-        venues: ["Molotow", "Knust", "Uebel & Gefährlich", "Fabrik"],
-        showVenue: true,
-        showPrice: true,
-      }
-  }
-]
-```
-
-## Configure options
+### Configure options
 
 | Option | Description | Default | Comment
 |---|---|---|---|
