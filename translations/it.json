@@ -1,0 +1,10 @@
+{
+    "LOADING":       "Caricamento dati...",
+    "ERROR":         "Errore",
+    "NO_EVENTS":     "Nessun evento trovato.",
+    "COL_NAME":      "Evento",
+    "COL_VENUE":     "Luogo",
+    "COL_DATE":      "Data",
+    "COL_PRICE":     "Prezzo",
+    "VENUE_LEGEND":  "Luoghi"
+}
