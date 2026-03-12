@@ -45,8 +45,7 @@ To use this module, add it to the modules array in the `config/config.js` file:
 ```javascript
 modules: [
   {
-    {
-    	module: "MMM-Eventim",
+      module: "MMM-Eventim",
     	position: "bottom_center",
     	config: {
         updateInterval: 60 * 1000,
@@ -58,8 +57,7 @@ modules: [
         venues: ["Molotow", "Knust", "Uebel & Gefährlich", "Fabrik"],
         showVenue: true,
         showPrice: true,
-    	}
-		}
+      }
   }
 ]
 ```
