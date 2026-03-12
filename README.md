@@ -55,4 +55,4 @@ To use this module, add it to the modules array in the `config/config.js` file:
 | `showPrice`| Show price in list | true | optional |
 | `showVenue`| Show venue in list | true | optional |
 | `inStock`| Show event only, when tickets are available | true | optional |
-| `venues` | Shows only venues that are defined | < empty > | string array, optional |
+| `venues` | Shows only venues that are defined | [] | string array, optional |
