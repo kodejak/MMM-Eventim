@@ -15,7 +15,7 @@ cd ~/MagicMirror/modules
 
 Clone this repository:
 ```
-git clone https://github.com/kodejak/MMM-Eventim 
+git clone https://github.com/kodejak/MMM-Eventim.git
 ```
 
 Configure the module in your `config.js` file.
