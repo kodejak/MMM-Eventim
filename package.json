@@ -1,0 +1,9 @@
+{
+    "name": "mmm-eventim",
+    "version": "1.0.0",
+    "description": "MagicMirror² module that displays the events and concerts of the next 30 days from Eventim",
+    "main": "MMM-Eventim.js",
+    "author": "Christian Handorf",
+    "license": "MIT",
+    "dependencies": {}
+}

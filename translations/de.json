@@ -1,0 +1,10 @@
+{
+    "LOADING":       "Lade Daten...",
+    "ERROR":         "Fehler",
+    "NO_EVENTS":     "Keine Veranstaltungen gefunden.",
+    "COL_NAME":      "Ereignis",
+    "COL_VENUE":     "Venue",
+    "COL_DATE":      "Datum",
+    "COL_PRICE":     "Preis",
+    "VENUE_LEGEND":  "Venues"
+}

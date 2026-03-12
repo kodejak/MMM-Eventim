@@ -1,0 +1,55 @@
+<div class="MMM-Eventim-wrapper">
+
+    <div class="MMM-Eventim-title bright">{{ title }}</div>
+
+    {% if not loaded %}
+        <div class="MMM-Eventim-loading dimmed small">{{ "LOADING" | translate }}</div>
+
+    {% elif error %}
+        <div class="MMM-Eventim-error small" style="color:red;">
+            {{ "ERROR" | translate }}: {{ error }}
+        </div>
+
+    {% elif events | length == 0 %}
+        <div class="MMM-Eventim-empty dimmed small">{{ "NO_EVENTS" | translate }}</div>
+
+    {% else %}
+        <table class="MMM-Eventim-table small">
+            <thead>
+                <tr>
+                    <th class="MMM-Eventim-th">{{ "COL_NAME" | translate }}</th>
+                    <th class="MMM-Eventim-th">{{ "COL_DATE" | translate }}</th>
+                    {% if showVenue %}
+                    <th class="MMM-Eventim-th MMM-ProductList-th-center">{{ "COL_VENUE" | translate }}</th>
+                    {% endif %}
+                    {% if showPrice %}
+                        <th class="MMM-Eventim-th MMM-Eventim-th-right">{{ "COL_PRICE" | translate }}</th>
+                    {% endif %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for event in events %}
+                <tr class="{{ 'MMM-Eventim-row-even' if loop.index is odd else 'MMM-Eventim-row-odd' }}">
+                    <td class="MMM-Eventim-td-name">{{ event.name if event.name else "–" }}</td>
+                    <td class="MMM-Eventim-td-date dimmed">{{ event.formattedDate if event.formattedDate else "–" }}</td>
+                    {% if showVenue %}
+                    <td class="MMM-Eventim-td-venue-nr">{{ event.venueNr if event.venueNr else "–" }}</td>
+                    {% endif %}
+                    {% if showPrice %}
+                    <td class="MMM-Eventim-td-price">{{ event.formattedPrice if event.formattedPrice else "–" }}</td>
+                    {% endif %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        {% if showVenue %}
+        <div class="MMM-Eventim-legend dimmed xsmall">
+            {% for v in venueLegend %}
+                <span class="MMM-Eventim-legend-item">{{ v.nr }}&nbsp;{{ v.name }}</span>
+            {% endfor %}
+        </div>
+        {% endif %}
+    {% endif %}
+
+</div>

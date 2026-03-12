@@ -1,0 +1,105 @@
+/* MMM-Eventim Styles */
+
+.MMM-Eventim-wrapper {
+    text-align: left;
+    min-width: 200px;
+}
+
+.MMM-Eventim-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.MMM-Eventim-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 6px;
+}
+
+.MMM-Eventim-th {
+    text-align: left;
+    padding: 4px 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    font-weight: bold;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.MMM-Eventim-td-nr {
+    padding: 3px 8px;
+    width: 30px;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.MMM-Eventim-td-name {
+    padding: 3px 8px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.MMM-Eventim-row-even {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.MMM-Eventim-row-odd {
+    background-color: transparent;
+}
+
+.MMM-Eventim-count {
+    text-align: right;
+    margin-top: 4px;
+    opacity: 0.5;
+}
+
+.MMM-Eventim-loading,
+.MMM-Eventim-empty {
+    text-align: center;
+    padding: 10px;
+    opacity: 0.6;
+}
+
+.MMM-Eventim-error {
+    text-align: center;
+    padding: 10px;
+}
+
+.MMM-Eventim-th-right {
+    text-align: right;
+}
+
+.MMM-Eventim-td-date {
+    padding: 3px 8px;
+    white-space: nowrap;
+    font-size: 0.85em;
+}
+
+.MMM-Eventim-td-price {
+    padding: 3px 8px;
+    text-align: right;
+    white-space: nowrap;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.MMM-Eventim-td-venue-nr {
+    padding: 3px 8px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: bold;
+}
+
+.MMM-Eventim-legend {
+    margin-top: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 12px;
+}
+
+.MMM-Eventim-legend-item {
+    white-space: nowrap;
+}
